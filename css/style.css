@@ -1,9 +1,9 @@
 :root {
-  --primary: #6090ff;
-  --primary-dark: #002479;
-  --primary-light: #50caff;
+  --primary: #86b6f6;
+  --primary-dark: #176b87;
+  --primary-light: #b4d4ff;
+  --background: #eef5ff;
   --text: #1a1a1a;
-  --background: #f5f5dc;
 }
 
 body {
@@ -20,8 +20,8 @@ body {
 }
 
 nav {
-  background-color: rgba(245, 245, 220, 0.6);
-  backdrop-filter: blur(10px);
+  background-color: rgba(238, 245, 255, 0.4);
+  backdrop-filter: blur(5px);
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
 }
@@ -29,8 +29,8 @@ nav {
 .navbar-brand {
   background: -webkit-linear-gradient(
     34deg,
-    rgba(27, 123, 170, 1) 7%,
-    rgba(0, 212, 255, 1) 88%
+    var(--primary) 7%,
+    var(--primary-dark) 88%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -59,7 +59,7 @@ button.navbar-toggler:focus {
 
 .navbar-brand:hover,
 .nav-link:hover {
-  color: var(--primary-light);
+  color: var(--primary-dark);
 }
 
 svg {
@@ -73,9 +73,9 @@ svg {
   background: var(--background);
   background: linear-gradient(
     180deg,
-    rgba(245, 245, 220, 1) 25%,
-    rgba(211, 202, 238, 1) 69%,
-    rgba(103, 127, 164, 1) 100%
+    var(--background) 25%,
+    var(--primary-light) 69%,
+    var(--primary-dark) 100%
   );
   z-index: -1;
   border-bottom-left-radius: 20em;
@@ -95,8 +95,8 @@ span:not(.navbar-toggler-icon),
 .benefit-item h5 {
   background: -webkit-linear-gradient(
     34deg,
-    rgba(27, 123, 170, 1) 7%,
-    rgba(0, 212, 255, 1) 88%
+    var(--text) 7%,
+    var(--primary-dark) 88%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -138,8 +138,8 @@ span:not(.navbar-toggler-icon),
 }
 
 #benefits {
-  border-radius: 10em;
-  background-color: rgba(103, 127, 164, 0.5);
+  border-radius: 5em;
+  background-color: var(--primary);
 }
 
 .benefits-illustration {
@@ -154,8 +154,11 @@ span:not(.navbar-toggler-icon),
   font-size: 1.5em;
   padding-top: 0.5em;
   display: block;
-  margin-inline: auto;
-  text-align: center;
+  text-align: right;
+}
+
+.benefit-item h5 {
+  width: fit-content;
 }
 
 .drinkability-item h5 {
@@ -165,7 +168,7 @@ span:not(.navbar-toggler-icon),
 #needs {
   border-top-left-radius: 5em;
   border-top-right-radius: 5em;
-  background-color: rgba(103, 127, 164, 0.5);
+  background-color: var(--primary);
 }
 
 .needs-img {
@@ -186,7 +189,7 @@ footer p a {
 }
 
 footer p a:hover {
-  color: var(--primary-light);
+  color: var(--primary-dark);
 }
 
 .closure {
@@ -205,10 +208,6 @@ footer p a:hover {
     transform: scale(0.9);
   }
 
-  #benefits {
-    border-radius: 5em;
-  }
-
   .benefits-illustration {
     height: 200px;
     width: unset;
@@ -218,10 +217,14 @@ footer p a:hover {
   }
 
   .benefit-item .row {
-    justify-content: center;
+    justify-content: stretch;
   }
 
   #needs {
     text-align: center;
+  }
+
+  .benefit-items {
+    margin-top: 2em;
   }
 }
