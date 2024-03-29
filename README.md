@@ -6,15 +6,15 @@
 
 Dive into information about the importance of drinking enough water here.
 
-- Intro
-- Dehydration
-- Benefits
-- Drinkability
-- Needs
+- [Intro](https://josephines1.github.io/drink-water-campaign/#intro)
+- [Dehydration](https://josephines1.github.io/drink-water-campaign/#dehydration)
+- [Benefits](https://josephines1.github.io/drink-water-campaign/#benefits)
+- [Drinkability](https://josephines1.github.io/drink-water-campaign/#drinkability)
+- [Needs](https://josephines1.github.io/drink-water-campaign/#needs)
 
 ## Tech
 
-Teknologi dalam aplikasi ini:
+Technology used on this website:
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - the most basic building block of the Web and defines the meaning and structure of web content.
 - [Bootstrap 5](https://getbootstrap.com/) - a powerful, extensible, and feature-packed frontend toolkit.
